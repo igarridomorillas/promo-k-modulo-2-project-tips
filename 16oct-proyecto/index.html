@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome profile cards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="./assets/img/logo-awesome-profile-cards.svg"
+        alt="Awesome Profile Cards logo"
+        title="Awesome Profile Cards"
+      />
+    </header>
+
+    <main class="main">
+      <section>
+        <h2 class="title">DISEÑA</h2>
+      </section>
+      <section class="fill">
+        <h2 class="title">RELLENA</h2>
+        <form class="fill__fields">
+          <label>Nombre completo</label>
+          <input type="text" name="name" id="name" class="fill__fields--input js-field" />
+          <label for="role">Puesto</label>
+          <input type="text" name="role" id="role" class="fill__fields--input js-role" />
+          <label for="image">Imagen de perfil</label>
+          <div class="action">
+            <button class="action__upload-btn js__profile-trigger" type="button">Añadir imagen</button>
+            <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn" />
+            <div class="profile__preview js__profile-preview"></div>
+          </div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="fill__fields--input js-email" />
+          <label for="telephone">Teléfono</label>
+          <input type="text" name="telephone" id="telephone" class="fill__fields--input js-telephone" />
+          <label for="linkedin">LinkedIn</label>
+          <input type="text" name="linkedin" id="linkedin" class="fill__fields--input js-linkedin" />
+          <label for="github">GitHub</label>
+          <input type="email" name="github" id="github" class="fill__fields--input js-github" />
+        </form>
+      </section>
+      <section>
+        <div class="profile">
+          <div
+            class="profile__image js__profile-image"
+            style="background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"
+          ></div>
+        </div>
+      </section>
+      <section class="preview">
+        <article class="preview__card js-preview">
+          <div class="preview__card--contact">
+            <h2 class="preview__card--name js-preview-name">Nombre Apellido</h2>
+            <h3 class="preview__card--role js-preview-role">Front-end</h3>
+          </div> 
+          <img src="http://placekitten.com/g/250/250" alt="Aqui va la cara" class="js-preview-image">
+          <div class="preview__card--links">
+            <a href="tel:+9876544321"><i class="fa fa-mobile"></i></a>
+            <a href="mailto:xxxx@zyx.com"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fa fa-github-alt"></i></a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="./assets/js/get-avatar.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

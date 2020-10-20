@@ -1,0 +1,114 @@
+:root {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.main {
+  background-color: #f5f5f5;
+  padding: 30px 40px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fill__fields {
+  display: flex;
+  flex-direction: column;
+  
+  width: calc( 100% / 2 );
+}
+
+.fill__fields--input {
+  margin-top:7px;
+  margin-bottom:20px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  border: solid 1px #a2deaf;
+}
+
+.listening {
+  border-color: blue;
+  box-shadow: 10px 22px 5px 5px black;
+}
+
+.preview {
+  border: solid 2px grey;
+  box-shadow: 5px 5px 3px 1px lightgray;
+  position: absolute;
+  top: 200px;
+  height: 410px;
+  right: 40px;
+}
+
+.preview__card--contact {
+  border-left: solid 5px #438792;
+  padding-left: 10px;
+}
+
+.preview__card--name {
+  font-weight: bold;
+  color: #438792;
+}
+
+.preview__card--links {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.preview__card--links a {
+  padding: 0px 15px;
+  border: solid 2px #a2deaf;
+  border-radius: 30px;
+  color: #114e4e;
+}
+
+/* --- */
+
+
+.action__upload-btn {
+  display: inline-block;
+  background: #e17334;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 0 0 5px rgba(#000, .3);
+  box-sizing: border-box;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  width: 250px;
+}
+.action__hiddenField {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+  darle los estilos que queremos */
+  display: none;
+}
+
+.profile {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.profile__image,
+.profile__preview {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
+}
+.profile__image {
+  display: none;
+  width: 300px;
+  height: 300px;
+}
+
+.profile__preview {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+}

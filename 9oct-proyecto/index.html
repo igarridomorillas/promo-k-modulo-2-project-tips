@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome profile cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="./assets/img/logo-awesome-profile-cards.svg"
+        alt="Awesome Profile Cards logo"
+        title="Awesome Profile Cards"
+      />
+    </header>
+
+    <main class="main">
+      <section>
+        <h2 class="title">DISEÑA</h2>
+      </section>
+      <section class="fill">
+        <h2 class="title">RELLENA</h2>
+        <form class="fill__fields">
+          <label>Nombre completo</label>
+          <input type="text" name="name" id="name" class="fill__fields--input js-field" />
+          <label for="role">Puesto</label>
+          <input type="text" name="role" id="role" class="fill__fields--input js-role" />
+          <label for="image">Imagen de perfil</label>
+          <div class="action">
+            <button class="action__upload-btn js__profile-trigger" type="button">Añadir imagen</button>
+            <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn" />
+            <div class="profile__preview js__profile-preview"></div>
+          </div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="fill__fields--input js-email" />
+          <label for="telephone">Teléfono</label>
+          <input type="text" name="telephone" id="telephone" class="fill__fields--input js-telephone" />
+          <label for="linkedin">LinkedIn</label>
+          <input type="text" name="linkedin" id="linkedin" class="fill__fields--input js-linkedin" />
+          <label for="github">GitHub</label>
+          <input type="email" name="github" id="github" class="fill__fields--input js-github" />
+        </form>
+      </section>
+      <section>
+        <div class="profile">
+          <div
+            class="profile__image js__profile-image"
+            style="background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"
+          ></div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/get-avatar.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
